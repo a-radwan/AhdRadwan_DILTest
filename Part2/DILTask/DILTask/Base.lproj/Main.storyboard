@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7tv-vJ-zAN">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Drawing Board View Controller-->
+        <scene sceneID="1AN-Pl-99Y">
+            <objects>
+                <viewController id="7tv-vJ-zAN" customClass="DrawingBoardViewController" customModule="DILTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y4v-ex-6iK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xby-tx-BfM" customClass="DrawingView" customModule="DILTask" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="59" width="393" height="729"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2ri-id-EwU">
+                                <rect key="frame" x="60" y="788" width="273" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhJ-wv-jWS">
+                                        <rect key="frame" x="0.0" y="4" width="21.666666666666668" height="22"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="delete.backward" catalog="system">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clearDrawingArea:" destination="7tv-vJ-zAN" eventType="touchUpInside" id="AG0-QL-Ou3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RD-Bi-RmK">
+                                        <rect key="frame" x="56.999999999999993" y="4" width="20.666666666666664" height="22"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="eraser" catalog="system">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="eraserButtonTapped:" destination="7tv-vJ-zAN" eventType="touchUpInside" id="8d1-Rv-f3P"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZ9-e0-nsL">
+                                        <rect key="frame" x="112.66666666666666" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="colorButtonTapped:" destination="7tv-vJ-zAN" eventType="touchUpInside" id="wMC-Kn-Htu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJC-5P-VsP">
+                                        <rect key="frame" x="178" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.80392156859999997" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="colorButtonTapped:" destination="7tv-vJ-zAN" eventType="touchUpInside" id="vKt-gS-mtV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZJ-h0-PlG">
+                                        <rect key="frame" x="243" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="colorButtonTapped:" destination="7tv-vJ-zAN" eventType="touchUpInside" id="ytJ-iQ-FbG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mia-J4-2yU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2ri-id-EwU" firstAttribute="leading" secondItem="mia-J4-2yU" secondAttribute="leading" constant="60" id="FXS-IT-w1u"/>
+                            <constraint firstItem="2ri-id-EwU" firstAttribute="top" secondItem="xby-tx-BfM" secondAttribute="bottom" id="GQ4-sZ-1kC"/>
+                            <constraint firstItem="mia-J4-2yU" firstAttribute="trailing" secondItem="xby-tx-BfM" secondAttribute="trailing" id="PLG-JD-3D8"/>
+                            <constraint firstItem="xby-tx-BfM" firstAttribute="leading" secondItem="mia-J4-2yU" secondAttribute="leading" id="R1o-v3-pbV"/>
+                            <constraint firstItem="mia-J4-2yU" firstAttribute="trailing" secondItem="2ri-id-EwU" secondAttribute="trailing" constant="60" id="RMW-Nu-LMj"/>
+                            <constraint firstItem="xby-tx-BfM" firstAttribute="top" secondItem="mia-J4-2yU" secondAttribute="top" id="Rx2-xh-CCA"/>
+                            <constraint firstItem="mia-J4-2yU" firstAttribute="bottom" secondItem="2ri-id-EwU" secondAttribute="bottom" id="Vdq-EW-hgD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blueButton" destination="zZ9-e0-nsL" id="kLL-Zr-Moc"/>
+                        <outlet property="drawingView" destination="xby-tx-BfM" id="Hac-En-vgO"/>
+                        <outlet property="greenButton" destination="uJC-5P-VsP" id="KCb-1x-wBg"/>
+                        <outlet property="redButton" destination="SZJ-h0-PlG" id="SyD-MD-JPb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1yy-aC-k1r" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.251908396946561" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="delete.backward" catalog="system" width="128" height="102"/>
+        <image name="eraser" catalog="system" width="128" height="119"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
