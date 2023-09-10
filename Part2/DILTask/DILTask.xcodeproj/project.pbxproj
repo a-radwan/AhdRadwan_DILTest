@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EC1984B12AAD1AF900E9B68C /* DrawingBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1984B02AAD1AF900E9B68C /* DrawingBoardViewModel.swift */; };
+		EC1F80532AADE0210052CAC2 /* DrawingBoardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F80522AADE0210052CAC2 /* DrawingBoardViewModelTests.swift */; };
 		ECFB26CF2AA9224100BF88C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB26CE2AA9224100BF88C3 /* AppDelegate.swift */; };
 		ECFB26D12AA9224100BF88C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB26D02AA9224100BF88C3 /* SceneDelegate.swift */; };
 		ECFB26D32AA9224100BF88C3 /* DrawingBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB26D22AA9224100BF88C3 /* DrawingBoardViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		EC1984B02AAD1AF900E9B68C /* DrawingBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingBoardViewModel.swift; sourceTree = "<group>"; };
+		EC1F80522AADE0210052CAC2 /* DrawingBoardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingBoardViewModelTests.swift; sourceTree = "<group>"; };
 		ECFB26CB2AA9224100BF88C3 /* DILTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DILTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECFB26CE2AA9224100BF88C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECFB26D02AA9224100BF88C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				ECFB26E52AA9224300BF88C3 /* DILTaskTests.swift */,
+				EC1F80522AADE0210052CAC2 /* DrawingBoardViewModelTests.swift */,
 			);
 			path = DILTaskTests;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECFB26E62AA9224300BF88C3 /* DILTaskTests.swift in Sources */,
+				EC1F80532AADE0210052CAC2 /* DrawingBoardViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
